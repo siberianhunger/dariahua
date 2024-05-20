@@ -13,11 +13,7 @@ Assuming you already have some python 3.10+ on your computer (if not, just insta
 
 1. Install, create & activate python virtual environment (if you don't care - you can install all dependencies just as it is)
 `
-sudo apt-get install python3-venv \
-
-python3 -m venv venv \
-
-source venv/bin/activate \
+sudo apt-get install python3-venv && python3 -m venv venv && source venv/bin/activate
 `
 
 2. Install dependencies
