@@ -1,5 +1,6 @@
 # SPA for my sister Daria :)
 https://dariahua.ru/
+kudos to https://github.com/TETSUKER for frontend editing
 ## run with docker
 
 1. 
