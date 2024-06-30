@@ -1,0 +1,47 @@
+.faq-section {
+  --max-width-size: 1195;
+  --min-width-size: 320;
+  width: var(--responsive-width-size);
+  margin-top: calc((60 * 1px) + (200 - 60) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+  text-align: start;
+}
+
+.faq-section .faq-section__header {
+  --max-font-size: 128;
+  --min-font-size: 38;
+  font-size: var(--responsive-font-size);
+  margin-left: calc((15 * 1px) + (75 - 15) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+}
+
+.qa-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-top: calc((30 * 1px) + (90 - 30) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+}
+
+.qa-wrap .qa-wrap__question {
+  --max-font-size: 44;
+  --min-font-size: 20;
+  font-size: var(--responsive-font-size);
+  margin-bottom: calc((10 * 1px) + (40 - 10) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+  margin-left: calc((15 * 1px) + (75 - 15) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+}
+
+.qa-wrap .qa-wrap__ask {
+  display: flex;
+  flex-direction: column;
+  --max-font-size: 28;
+  --min-font-size: 14;
+  font-size: var(--responsive-font-size);
+  white-space: normal;
+  background-color: var(--yellow);
+  padding-top: calc((10 * 1px) + (25 - 10) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+  padding-bottom: calc((10 * 1px) + (25 - 10) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+  padding-left: calc((15 * 1px) + (77 - 15) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+  padding-right: calc((15 * 1px) + (77 - 15) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+  line-height: calc((17 * 1px) + (43 - 17) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+}
+
+.qa-wrap .qa-wrap__text-with-padding {
+  padding-bottom: calc((10* 1px) + (30 - 10) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+}

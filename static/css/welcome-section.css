@@ -1,0 +1,46 @@
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8%;
+  font-weight: 400;
+  text-align: start;
+  width: inherit;
+}
+
+.welcome-section .welcome-section__chinese {
+  --max-width-size: 508;
+  --min-width-size: 200;
+  width: var(--responsive-width-size);
+}
+
+.welcome-section .welcome-section__photo {
+  --max-width-size: 667;
+  --min-width-size: 255;
+  width: var(--responsive-width-size);
+  margin: 4% 0;
+}
+
+.welcome-section .welcome-section__introduce {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5%;
+}
+
+.welcome-section .welcome-section__header {
+  --max-font-size: 86;
+  --min-font-size: 30;
+  font-size: var(--responsive-font-size);
+}
+
+.welcome-section .welcome-section__text {
+  --max-font-size: 45;
+  --min-font-size: 16;
+  font-size: var(--responsive-font-size);
+  color: #191919;
+  text-align: center;
+}
+
+.welcome-section .welcome-section__button {
+  margin-top: 20px;
+}

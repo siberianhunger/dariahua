@@ -1,0 +1,142 @@
+* {
+  --yellow: #f5fbaf;
+  --green: #0E4D1C;
+  --grey: #555555;
+  --min-port-width: 320;
+  --max-port-width: 1920;
+  --content-width: 70ch;
+  --animationStartsAfter: 10vh;
+  --animationDistance: 150px;
+  --responsive-font-size: calc((var(--min-font-size) * 1px) + calc(var(--max-font-size) - var(--min-font-size)) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+  --responsive-width-size: calc((var(--min-width-size) * 1px) + calc(var(--max-width-size) - var(--min-width-size)) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+}
+
+body, html {
+  font-family: "Yeseva One", Arial, sans-serif;
+  text-align: -webkit-center;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: min-content;
+  height: auto;
+}
+
+.text {
+  color: #191919;
+  text-align: center;
+}
+
+.header {
+  color: #2b2b2b;
+  font-weight: 400;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-around;
+  margin: calc((10 * 1px) + (20 - 10) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width)))) 0;
+  padding: 0 calc((0 * 1px) + (310 - 0) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+}
+
+.header-nav a {
+  --max-font-size: 46;
+  --min-font-size: 15;
+  font-size: var(--responsive-font-size);
+  text-decoration: none;
+  color: #121212;
+}
+
+.text-with-backgournd {
+  background-color: var(--yellow);
+}
+
+.link-button {
+  --max-width-size: 667;
+  --min-width-size: 210;
+  width: var(--responsive-width-size);
+  --max-font-size: 52;
+  --min-font-size: 18;
+  font-size: var(--responsive-font-size);
+  background-color: var(--green);
+  color: white;
+  border: none;
+  border-radius: 70px;
+  font-family: sans-serif;
+  padding: calc((9 * 1px) + (38 - 9) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width)))) 0;
+  display: flex;
+  align-items: center;
+  gap: calc((20 * 1px) + (50 - 20) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+  justify-content: center;
+  text-decoration: none;
+}
+
+.long-arrow {
+  --max-width-size: 100;
+  --min-width-size: 45;
+  min-width: var(--responsive-width-size);
+  position:relative;
+  height: 30px;
+  cursor: pointer;
+  overflow: hidden;
+  transform: rotate(180deg);
+  color: white;
+}
+
+.long-arrow:after {
+  position: absolute;
+  display: block;
+  content: "";
+  color: inherit;
+  width: -webkit-fill-available;
+  height: 15px;
+  top: -2px;
+  border-bottom: solid calc((3 * 1px) + (5 - 3) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+  transform: translatex(6px);
+}
+
+.long-arrow:before {
+  position: absolute;
+  display: block;
+  content: "";
+  color: inherit;
+  width: calc((10 * 1px) + (15 - 10) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+  height: calc((10 * 1px) + (15 - 10) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+  border-top: solid calc((3 * 1px) + (5 - 3) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+  border-left: solid calc((3 * 1px) + (5 - 3) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+  top: 50%;
+  left: 2px;
+  transform-origin: 0% 0%;
+  transform: rotatez(-45deg);
+}
+
+.top {
+  cursor: pointer;
+  width: calc((40 * 1px) + (50 - 40) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+  height: calc((40 * 1px) + (50 - 40) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-color: #00000078;
+  background-image: url(../images/arrow.png);
+  border-radius: 50%;
+
+  position: fixed;
+  bottom: calc((10 * 1px) + (50 - 10) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+  right: calc((10 * 1px) + (50 - 10) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+  z-index: 1;
+  border: none;
+  transition: 0.5s;
+}
+
+.top.active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.top:not(.active) {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
