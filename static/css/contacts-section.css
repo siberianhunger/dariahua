@@ -1,0 +1,51 @@
+.contacts-section {
+  margin-top: calc((20 * 1px) + (70 - 20) * ((100vw - var(--min-port-width)* 1px) /(var(--max-port-width) - var(--min-port-width))));
+  padding-top: calc((30 * 1px) + (60 - 30) * ((100vw - var(--min-port-width)* 1px) /(var(--max-port-width) - var(--min-port-width))));
+  padding-bottom: calc((30 * 1px) + (120 - 30) * ((100vw - var(--min-port-width)* 1px) /(var(--max-port-width) - var(--min-port-width))));
+  position: relative;
+  overflow: hidden;
+}
+
+.contacts-section::after {
+  content: "";
+  position: absolute;
+  width: calc((370 * 1px) + (1500 - 400) * ((100vw - var(--min-port-width)* 1px) /(var(--max-port-width) - var(--min-port-width))));
+  height: calc((350 * 1px) + (900 - 350) * ((100vw - var(--min-port-width)* 1px) /(var(--max-port-width) - var(--min-port-width))));
+  top: calc((50 * 1px) + (160 - 50) * ((100vw - var(--min-port-width)* 1px) /(var(--max-port-width) - var(--min-port-width))));
+  right: calc((10 * 1px) + (230 - 10) * ((100vw - var(--min-port-width)* 1px) /(var(--max-port-width) - var(--min-port-width))));
+  z-index: -1;
+  background-image: url(../images/chinese_5.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(24deg);
+}
+
+.contacts-section .contacts-section__header {
+  --max-font-size: 128;
+  --min-font-size: 38;
+  font-size: var(--responsive-font-size);
+  margin-right: calc((95 * 1px) + (375 - 95) * ((100vw - var(--min-port-width)* 1px) /(var(--max-port-width) - var(--min-port-width))));
+}
+
+.contacts-section .contacts-section__instagram-button,
+.contacts-section .contacts-section__telegram-button {
+  --max-font-size: 50;
+  --min-font-size: 16;
+  font-size: var(--responsive-font-size);
+  font-family: 'Yeseva One', Arial, sans-serif;
+  gap: calc((5 * 1px) + (20 - 5) * ((100vw - var(--min-port-width)* 1px) /(var(--max-port-width) - var(--min-port-width))));
+}
+
+.contacts-section .contacts-section__instagram-button {
+  --max-width-size: 865;
+  --min-width-size: 270;
+  width: var(--responsive-width-size);
+  margin-top: calc((50 * 1px) + (300 - 50) * ((100vw - var(--min-port-width)* 1px) /(var(--max-port-width) - var(--min-port-width))));
+}
+
+.contacts-section .contacts-section__telegram-button {
+  --max-width-size: 667;
+  --min-width-size: 210;
+  width: var(--responsive-width-size);
+  margin-top: calc((30 * 1px) + (130 - 30) * ((100vw - var(--min-port-width)* 1px) /(var(--max-port-width) - var(--min-port-width))));
+}

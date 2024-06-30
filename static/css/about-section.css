@@ -1,0 +1,238 @@
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+  font-weight: 400;
+  width: 100%;
+}
+
+.introduce {
+  display: flex;
+  flex-direction: column;
+  --max-width-size: 1028;
+  --min-width-size: 260;
+  width: var(--responsive-width-size);
+}
+
+.introduce .introduce__header {
+  width: 100%;
+  text-align: start;
+  --max-font-size: 128;
+  --min-font-size: 38;
+  font-size: var(--responsive-font-size);
+}
+
+.introduce .introduce__text {
+  text-align: start;
+  margin-top: calc((8 * 1px) + (50 - 8) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+  --max-font-size: 50;
+  --min-font-size: 17;
+  font-size: var(--responsive-font-size);
+}
+
+.photo-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4%;
+  --max-width-size: 1028;
+  --min-width-size: 260;
+  width: var(--responsive-width-size);
+}
+
+.photo-wrap .photo-wrap__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  flex-basis: 47%;
+}
+
+.photo-wrap .photo-wrap__image {
+  width: 100%;
+}
+
+.photo-wrap .photo-wrap__chinese-image {
+  width: 95%;
+}
+
+.photo-wrap .photo-wrap__column:nth-child(odd) {
+  padding-bottom: calc((60 * 1px) + (180 - 60) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+}
+
+.photo-wrap .photo-wrap__column:nth-child(even) {
+  padding-top: calc((30 * 1px) + (80 - 30) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+}
+
+.about-section .about-section__experience {
+  text-align: start;
+  --max-font-size: 44;
+  --min-font-size: 16;
+  font-size: var(--responsive-font-size);
+  --max-width-size: 960;
+  --min-width-size: 250;
+  width: var(--responsive-width-size);
+}
+
+.advantages-list {
+  --margin-top: calc((50 * 1px) + (500 - 50) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+  --margin-bottom: calc((0 * 1px) + (400 - 0) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+  margin: var(--margin-top) 0 var(--margin-bottom);
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  --max-width-size: 800;
+  --min-width-size: 250;
+  width: var(--responsive-width-size);
+}
+
+.advantages-list .advantages-list__item {
+  display: flex;
+  align-items: baseline;
+  text-align: start;
+  column-gap: 15px;
+}
+
+.advantages-list .advantages-list__check-mark {
+  color: var(--green);
+  display: inline-block;
+  transform: rotate(45deg);
+  height: calc((14 * 1px) + (24 - 14) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+  width: calc((8 * 1px) + (12 - 8) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+  border-bottom: calc((4 * 1px) + (5 - 4) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width)))) solid var(--green);
+  border-right: calc((4 * 1px) + (5 - 4) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width)))) solid var(--green);
+}
+
+.advantages-list .advantages-list__text {
+  font-family: system-ui;
+  font-weight: 300;
+  color: var(--grey);
+  --max-font-size: 50;
+  --min-font-size: 16;
+  font-size: var(--responsive-font-size);
+}
+
+.why-me {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  --max-width-size: 1200;
+  --min-width-size: 280;
+  width: var(--responsive-width-size);
+}
+
+.why-me .why-me__header{
+  text-align: start;
+  line-height: 0.9;
+  --max-font-size: 128;
+  --min-font-size: 30;
+  font-size: var(--responsive-font-size);
+  white-space: pre-line;
+}
+
+.why-me .why-me__text {
+  font-family: system-ui;
+  font-weight: 300;
+  text-align: start;
+  padding-top: calc((20 * 1px) + (100 - 20) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+  --max-font-size: 55;
+  --min-font-size: 16;
+  font-size: var(--responsive-font-size);
+  white-space: pre-line;
+}
+
+.why-me .why-me__button-wrap {
+  padding-top: calc((20 * 1px) + (50 - 20) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+}
+
+.work-photo {
+  position: relative;
+  margin-top: 5%;
+  width: 100%;
+}
+
+.work-photo .work-photo__text {
+  position: absolute;
+  top: calc((18 * 1px) + (60 - 18) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+  left: calc((42 * 1px) + (535 - 42) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+  color: #191919;
+  font-weight: 400;
+  text-align: left;
+  background-color: #f8ffd2;
+  white-space: pre-line;
+  width: fit-content;
+  --max-font-size: 50;
+  --min-font-size: 15;
+  font-size: var(--responsive-font-size);
+}
+
+.work-photo .work-photo__image {
+  height: auto;
+  object-fit: contain;
+  --max-width-size: 950;
+  --min-width-size: 270;
+  width: var(--responsive-width-size);
+}
+
+.critic {
+  display: flex;
+  justify-content: center;
+  background-color: var(--yellow);
+  margin-top: calc((20 * 1px) + (200 - 20) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+  margin-bottom: calc((20 * 1px) + (100 - 20) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+  --max-width-size: 1200;
+  --min-width-size: 320;
+  width: var(--responsive-width-size);
+}
+
+.critic .critic__text {
+  color: #191919;
+  font-weight: 400;
+  text-align: start;
+  padding: 30px 0;
+  white-space: pre-line;
+  --max-font-size: 86;
+  --min-font-size: 22;
+  font-size: var(--responsive-font-size);
+}
+
+.teaching-plan-advantages {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: calc((30 * 1px) + (70 - 30) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width)))) 0;
+  background-image: url(../images/chinese_4.png);
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  --max-width-size: 1050;
+  --min-width-size: 290;
+  width: var(--responsive-width-size);
+}
+
+.teaching-plan-advantages .teaching-plan-advantages__arrow {
+  color: var(--green);
+}
+
+.teaching-plan-advantages .teaching-plan-advantages__item {
+  display: flex;
+  text-align: start;
+  column-gap: calc((10 * 1px) + (100 - 10) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+}
+
+.teaching-plan-advantages .teaching-plan-advantages__item:nth-child(2),
+.teaching-plan-advantages .teaching-plan-advantages__item:nth-child(3) {
+  margin-bottom: calc((10 * 1px) + (50 - 10) * ((100vw - var(--min-port-width) * 1px) / (var(--max-port-width) - var(--min-port-width))));
+}
+
+.teaching-plan-advantages .teaching-plan-advantages__text {
+  font-weight: 400;
+  color: #191919;
+  --max-font-size: 44;
+  --min-font-size: 14;
+  font-size: var(--responsive-font-size);
+  white-space: pre-line;
+}
